@@ -12,7 +12,7 @@ if st.button("send massage"):
             pywhatkit.sendwhatmsg(number, massage, t1, t2,20,True, 15)
             st.success("message sent successfully")
         except Exception as e:
-            st.error(f"Failed tosent massage: {e}")
+            st.error(f"Failed to sent massage: {e}")
 
     else:
         (st.error("Please enter both phone number and message."))
